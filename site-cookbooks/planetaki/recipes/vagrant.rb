@@ -2,6 +2,6 @@
 # Special config for vagrant
 #
 
-require_recipe "ubuntu"
-require_recipe "planetaki"
+include_recipe "ubuntu"
+include_recipe "planetaki"
 

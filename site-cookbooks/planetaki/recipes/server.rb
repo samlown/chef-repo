@@ -1,11 +1,11 @@
 
-require_recipe "planetaki"
+include_recipe "planetaki"
 
 # Specific requirements for the server environment
 
-require_recipe "nginx"
-require_recipe "unicorn"
-require_recipe "god"
+include_recipe "nginx"
+include_recipe "unicorn"
+include_recipe "god"
 
 package "git-core"
 

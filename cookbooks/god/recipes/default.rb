@@ -24,6 +24,10 @@ gem_package "god" do
   action :install
 end
 
+link "/usr/bin/god" do
+  to "/var/lib/gems/1.8/bin/god"
+end
+
 directory "/etc/god/conf.d" do
   recursive true
   owner "root"

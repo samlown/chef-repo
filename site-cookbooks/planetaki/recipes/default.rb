@@ -3,11 +3,11 @@ package "language-pack-en"
 
 package "build-essential"
 
-require_recipe "imagemagick"
-require_recipe "rabbitmq"
-require_recipe "mongodb"
-require_recipe "rails"
-require_recipe "postgresql"
+include_recipe "imagemagick"
+include_recipe "rabbitmq"
+include_recipe "mongodb"
+include_recipe "rails"
+include_recipe "postgresql"
 
 include_recipe "postgresql::server"
 
