@@ -36,9 +36,11 @@ package "libcurl4-openssl-dev"
   ["fast_gettext", "0.5.3"],
   "haml", "json", "nokogiri", "feedzirra", "jnunemaker-validatable",
   ["mongo_mapper", "0.7.4"],
-  "mini_magick", "carrierwave", 
+  ["bson_ext", "1.0.1"],
+  "mini_magick", 
+  ["samlown-carrierwave", "0.4.5"], 
   "bunny", "amqp", "loofah", "daemons",
-  "bson_ext", "ruby-openid", "memcache",
+  "ruby-openid", "memcache",
   "workling", "gettext", "rspec", "mongrel", "aws"
 ].each do |lib|
 
