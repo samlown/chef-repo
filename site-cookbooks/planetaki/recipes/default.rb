@@ -33,10 +33,12 @@ package "libcurl4-openssl-dev"
 
 # Gem packages required
 [
+  ["rails", "2.3.8"],
+  ["mongo_mapper", "0.7.6"],
   ["fast_gettext", "0.5.3"],
   "haml", "json", "nokogiri", "feedzirra", "jnunemaker-validatable",
-  ["mongo_mapper", "0.7.4"],
-  ["bson_ext", "1.0.1"],
+  "will_paginate",
+  ["bson_ext", "1.0"],
   "mini_magick", 
   ["samlown-carrierwave", "0.4.5"], 
   "bunny", "amqp", "loofah", "daemons",
