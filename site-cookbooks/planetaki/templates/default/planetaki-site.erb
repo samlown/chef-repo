@@ -1,13 +1,13 @@
 
 upstream planetaki_app {
-  server unix:/home/planetaki/deploy/Planetaki/current/tmp/sockets/unicorn.sock;
+  server unix:/home/planetaki/deploy/Planetaki/shared/sockets/unicorn.sock;
 }
 
 server {
   listen 80;
   server_name srv1.planetaki.com;
 
-  access_log <%= @node[:nginx][:log_dir] %>/planetaki.access.log main;
+  access_log <%= @node[:nginx][:log_dir] %>/planetaki.access.log;
 
   root /home/planetaki/deploy/Planetaki/current/public;
 
