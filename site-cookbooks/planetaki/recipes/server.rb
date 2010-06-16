@@ -32,16 +32,24 @@ template "/etc/nginx/sites-available/planetaki" do
   group "root"
 end
 
+template "/etc/nginx/sites-available/planetaki-staging" do
+  source "planetaki-staging.erb"
+  mode "0755"
+  owner "root"
+  group "root"
+end
+
 nginx_site "default" do
   enable false 
 end
 
 nginx_site "planetaki"
+nginx_site "planetaki-staging"
 
+# configure god for production only!
 god_monitor "planetaki" do
   config "unicorn.god.erb"
   max_memory 150
   rails_root "/home/planetaki/deploy/Planetaki/current"
 end
-
 

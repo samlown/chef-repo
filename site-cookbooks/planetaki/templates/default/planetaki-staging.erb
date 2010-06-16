@@ -1,15 +1,15 @@
 
-upstream planetaki_app {
-  server unix:/home/planetaki/deploy/Planetaki/shared/sockets/unicorn.sock;
+upstream planetaki_devel_app {
+  server unix:/home/planetaki/deploy/staging/shared/sockets/unicorn.sock;
 }
 
 server {
   listen 80;
-  server_name _;
+  server_name nostromo.planetaki.com;
 
   access_log <%= @node[:nginx][:log_dir] %>/planetaki.access.log;
 
-  root /home/planetaki/deploy/Planetaki/current/public;
+  root /home/planetaki/deploy/staging/current/public;
 
   location / {
     # needed to forward user's IP address to rails
@@ -22,7 +22,7 @@ server {
     proxy_max_temp_file_size 0;
 
     if (!-f $request_filename) {
-      proxy_pass http://planetaki_app;
+      proxy_pass http://planetaki_devel_app;
       break;
     }
   }

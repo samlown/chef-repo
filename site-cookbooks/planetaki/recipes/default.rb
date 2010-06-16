@@ -43,7 +43,8 @@ package "libcurl4-openssl-dev"
   ["samlown-carrierwave", "0.4.5"], 
   "bunny", "amqp", "loofah", "daemons",
   "ruby-openid", "memcache",
-  "workling", "gettext", "rspec", "mongrel", "aws"
+  "workling", "gettext", "rspec", "mongrel", "aws",
+  "zip", "rest-client"
 ].each do |lib|
 
   if lib.is_a?(Array)
