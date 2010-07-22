@@ -1,0 +1,12 @@
+maintainer       "Sam Lown"
+maintainer_email "me@samlown.com"
+license          "Apache 2.0"
+description      "Configurations for Ityzen Systems"
+long_description IO.read(File.join(File.dirname(__FILE__), 'README.rdoc'))
+version          "0.1"
+depends          "nginx"
+depends          "unicorn"
+depends          "god"
+depends          "apache2"
+depends          "capistrano"
+depends          "passenger_apache2"
