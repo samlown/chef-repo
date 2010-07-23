@@ -1,0 +1,59 @@
+{
+  "recipes": {
+
+  },
+  "suggestions": {
+
+  },
+  "license": "Apache 2.0",
+  "maintainer_email": "me@samlown.com",
+  "conflicting": {
+
+  },
+  "providing": {
+
+  },
+  "description": "Configurations for Ityzen Systems",
+  "platforms": {
+
+  },
+  "attributes": {
+
+  },
+  "replacing": {
+
+  },
+  "dependencies": {
+    "mongodb": [
+
+    ],
+    "passenger_apache2": [
+
+    ],
+    "unicorn": [
+
+    ],
+    "nginx": [
+
+    ],
+    "god": [
+
+    ],
+    "apache2": [
+
+    ],
+    "capistrano": [
+
+    ]
+  },
+  "version": "0.2.0",
+  "groupings": {
+
+  },
+  "long_description": "= DESCRIPTION:\n\n= REQUIREMENTS:\n\n= ATTRIBUTES: \n\n= USAGE:\n\n",
+  "name": "ityzen",
+  "recommendations": {
+
+  },
+  "maintainer": "Sam Lown"
+}

@@ -1,0 +1,41 @@
+{
+  "recipes": {
+
+  },
+  "suggestions": {
+
+  },
+  "license": "Apache 2.0",
+  "maintainer_email": "ops@example.com",
+  "conflicting": {
+
+  },
+  "providing": {
+
+  },
+  "description": "Installs/Configures rentages",
+  "platforms": {
+
+  },
+  "attributes": {
+
+  },
+  "replacing": {
+
+  },
+  "dependencies": {
+    "ityzen": [
+
+    ]
+  },
+  "version": "0.1.0",
+  "groupings": {
+
+  },
+  "long_description": "= DESCRIPTION:\n\n= REQUIREMENTS:\n\n= ATTRIBUTES: \n\n= USAGE:\n\n",
+  "name": "rentages",
+  "recommendations": {
+
+  },
+  "maintainer": "Example Com"
+}

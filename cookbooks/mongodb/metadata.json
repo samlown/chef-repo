@@ -1,0 +1,49 @@
+{
+  "recipes": {
+
+  },
+  "suggestions": {
+
+  },
+  "license": "Apache 2.0",
+  "maintainer_email": "cookbooks@opscode.com",
+  "conflicting": {
+
+  },
+  "providing": {
+
+  },
+  "description": "Installs and configures mongodb",
+  "platforms": {
+    "debian": [
+
+    ],
+    "ubuntu": [
+
+    ]
+  },
+  "attributes": {
+
+  },
+  "replacing": {
+
+  },
+  "dependencies": {
+    "runit": [
+
+    ],
+    "ruby": [
+
+    ]
+  },
+  "version": "0.1.0",
+  "groupings": {
+
+  },
+  "long_description": "\nMondoDB support. Downloads and manually installs package.\n",
+  "name": "mongodb",
+  "recommendations": {
+
+  },
+  "maintainer": "Opscode, Inc."
+}
