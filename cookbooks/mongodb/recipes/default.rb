@@ -50,7 +50,7 @@ execute "add-to-path" do
   not_if "grep 'export PATH=$PATH:/usr/local/mongodb/bin' /etc/profile"
 end
 
-remote_file "/etc/init.d/mongodb" do
+cookbook_file "/etc/init.d/mongodb" do
   source "mongodb"
   owner "root"
   group "root"

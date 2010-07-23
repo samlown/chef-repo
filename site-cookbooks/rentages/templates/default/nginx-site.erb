@@ -1,0 +1,30 @@
+
+upstream <%= @app_name %> {
+  server unix:<%= @socket %>;
+}
+
+server {
+  listen 80;
+  server_name <%= @domains.join(', ') %>;
+
+  access_log <%= @node[:nginx][:log_dir] %>/<%= @params[:name] %>.access.log;
+
+  root <%= @root %>;
+
+  location / {
+    # needed to forward user's IP address to rails
+    proxy_set_header  X-Real-IP  $remote_addr;
+    
+    # needed for HTTPS
+    proxy_set_header  X-Forwarded-For $proxy_add_x_forwarded_for;
+    proxy_set_header Host $http_host;
+    proxy_redirect off;
+    proxy_max_temp_file_size 0;
+
+    if (!-f $request_filename) {
+      proxy_pass http://<%= @app_name %>;
+      break;
+    }
+  }
+}
+

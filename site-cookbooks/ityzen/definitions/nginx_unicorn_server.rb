@@ -29,6 +29,9 @@ define :nginx_unicorn_web_app, :user => 'user', :domains => ['www.site.com']  do
   end
 
   template "/etc/nginx/sites-available/#{params[:name]}" do
+    if params[:cookbook]
+      cookbook params[:cookbook]
+    end
     source "nginx-site.erb"
     mode "0755"
     owner "root"
@@ -48,6 +51,9 @@ define :nginx_unicorn_web_app, :user => 'user', :domains => ['www.site.com']  do
   nginx_site params[:name]
 
   template File.join('/etc/logrotate.d', app_params[:name]) do
+    if params[:cookbook]
+      cookbook params[:cookbook]
+    end
     source 'rails_logrotate.erb'
     owner 'root'
     group 'root'

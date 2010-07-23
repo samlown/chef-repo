@@ -17,3 +17,6 @@
 # limitations under the License.
 #
 
+package "git-arch"
+gem_package "bundler"
+

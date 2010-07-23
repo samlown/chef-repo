@@ -20,6 +20,10 @@
 package "language-pack-en"
 package "build-essential"
 
+# For nokogiri
+package "libxml2-dev"
+package "libxslt1-dev"
+
 include_recipe "mongodb"
 include_recipe "ityzen"
 
