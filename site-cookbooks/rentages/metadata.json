@@ -6,7 +6,7 @@
 
   },
   "license": "Apache 2.0",
-  "maintainer_email": "ops@example.com",
+  "maintainer_email": "me@samlown.com",
   "conflicting": {
 
   },
@@ -24,6 +24,12 @@
 
   },
   "dependencies": {
+    "mongodb": [
+
+    ],
+    "postfix": [
+
+    ],
     "ityzen": [
 
     ]
@@ -37,5 +43,5 @@
   "recommendations": {
 
   },
-  "maintainer": "Example Com"
+  "maintainer": "Sam Lown - Rentages"
 }

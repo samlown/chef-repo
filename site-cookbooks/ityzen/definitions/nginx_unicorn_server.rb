@@ -54,7 +54,7 @@ define :nginx_unicorn_web_app, :user => 'user', :domains => ['www.site.com']  do
     if params[:cookbook]
       cookbook params[:cookbook]
     end
-    source 'rails_logrotate.erb'
+    source 'unicorn_logrotate.erb'
     owner 'root'
     group 'root'
     mode 0644
